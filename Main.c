@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "Fib.h"
+#include "Common.h"
 
 int main()
   {
