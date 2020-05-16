@@ -4,7 +4,7 @@
 int main()
   {
     int n;
-    n = Fib(8);
-    printf("Fibonacci of 8 is : %d\n", n);
+    n = Fib(9);
+    printf("Fibonacci of 9 is : %d\n", n);
   }
   
