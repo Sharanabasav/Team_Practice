@@ -10,5 +10,5 @@ install:
 
 script:
   - echo "Reached Script Section"
-  - gcc   Fib_Def.c  Fib_Main.c -o output
+  - gcc   Fib_Def.c  Main.c -o output
   - ./output
