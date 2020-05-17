@@ -14,19 +14,17 @@ int main()
     printf("Before swapping: %d, %d", num1, num2);
   
     /*calling swap function*/
-    swapnum(num1, num2);
+    swapnum(&num1, &num2);
     printf("\nAfter swapping: %d, %d", num1, num2);
  
   }
   
-void swapnum( int var1, int var2 )
+void swapnum(int *a, int *b)
 {
-   int tempnum ;
-   /*Copying var1 value into temporary variable */
-   tempnum = var1 ;
-   /* Copying var2 value into var1*/
-   var1 = var2 ;
-   /*Copying temporary variable value into var2 */
-   var2 = tempnum ;
+   int temp;
+ 
+   temp = *b;
+   *b = *a;
+   *a = temp;  
+ }
 
-}
