@@ -10,7 +10,7 @@ install:
 
 script:
   - echo "Reached Script Section"
-  - gcc   degree.c Fib_Def.c  Main.c -o output
+  - gcc   Array_math.c degree.c Fib_Def.c  Main.c -o output
   - ./output
   #added section for cunit testing
   - echo "Reached Script Section - cunit_reggie"
@@ -21,3 +21,7 @@ script:
   - gcc   CUnit_Funcs_JJ.c -o CUnit_Funcs_JJ -lcunit
   - ./CUnit_Funcs_JJ
   - size CUnit_Funcs_JJ
+  - echo "Reached Script Section - Array_math_cunit_JG"
+  - gcc   Array_math_cunit.c -o Array_math_cunit_JG -lcunit
+  - ./Array_math_cunit_JG
+  - size Array_math_cunit_JG
