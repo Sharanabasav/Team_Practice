@@ -25,3 +25,7 @@ script:
   - gcc   Array_math_cunit.c -o Array_math_cunit_JG -lcunit
   - ./Array_math_cunit_JG
   - size Array_math_cunit_JG
+  - echo "Reached Script Section - C_Unit_Function"
+  - gcc   C_Unit_Function.c -o C_Unit_Function -lcunit
+  - ./C_Unit_Function
+  - size C_Unit_Function
