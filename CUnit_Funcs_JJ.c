@@ -4,7 +4,8 @@
 void swap(int*, int*);
 int prime_number(int);
 int largest_in_Array(int[],int); 
-int Validate_Pwd(char a[]);
+int Validate_Pwd(char[]);
+int stringlength(char[]);
 
 /* This function is to swap 2 integers */
 void swap(int *a, int *b)
@@ -59,13 +60,15 @@ int largest_in_Array(int arr[], int n)
 int Validate_Pwd(char a[])
 {
     char c;
-    int len,i,flag1=0,flag2=0,flag3=0,flag4=0;
-    len=strlen(a);
+    int len,flag1=0,flag2=0,flag3=0,flag4=0;
+	
+    len=stringlength(a);
+	
     if(len<6)
     flag1=1;
     else
     {
-        for(i=0;i<len;i++)
+        for(int i=0;i<len;i++)
         if((a[i]>=48&&a[i]<=58))
         {
             flag2=0;
@@ -75,7 +78,7 @@ int Validate_Pwd(char a[])
         else
         flag2=1;
 
-        for(i=0;i<len;i++)
+        for(int i=0;i<len;i++)
         if((a[i]>=65&&a[i]<=90))
         {
             flag3=0;
@@ -85,7 +88,7 @@ int Validate_Pwd(char a[])
         else
         flag3=1;
 
-        for(i=0;i<len;i++)
+        for(int i=0;i<len;i++)
         if(a[i]=='#'||a[i]=='$'||a[i]=='*'||a[i]=='&')
         {
             flag4=0;
@@ -103,6 +106,12 @@ int Validate_Pwd(char a[])
     return 1;
 }
 
+int stringlength(char s[])
+{
+ int i;
+  for (i = 0; s[i] != '\0'; ++i);
+  return i;
+}
 
 /* Cunit testcases to validate the Pwd */
 void ValidtaePwd_CUnitTest()
