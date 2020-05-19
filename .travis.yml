@@ -21,3 +21,8 @@ script:
   - gcc   CUnit_Funcs_JJ.c -o CUnit_Funcs_JJ -lcunit
   - ./CUnit_Funcs_JJ
   - size CUnit_Funcs_JJ
+
+  - echo "Reached Script Section - C_Unit_Function"
+  - gcc   C_Unit_Function.c -o C_Unit_Function -lcunit
+  - ./C_Unit_Function
+  - size C_Unit_Function
