@@ -17,3 +17,7 @@ script:
   - gcc   cunit_reggie.c -o cunit_reggie -lcunit
   - ./cunit_reggie
   - size cunit_reggie
+  - echo "Reached Script Section - CUnit_Funcs_JJ"
+  - gcc   CUnit_Funcs_JJ.c -o CUnit_Funcs_JJ -lcunit
+  - ./CUnit_Funcs_JJ
+  - size CUnit_Funcs_JJ
