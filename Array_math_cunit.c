@@ -83,10 +83,16 @@ void test_array_math(void){
 	}
 
 int main() {
+	int i;
 	arr_elemnts = 5;
-	tst_arr1[arr_elemnts] = {1,8,10,7,-5};
-	tst_arr2[arr_elemnts] = {1,0,0,0,-1};
-
+	int arr1[arr_elemnts] = {1,8,10,7,-5};
+	int arr2[arr_elemnts] = {1,0,0,0,-1};
+	tst_arr1 = (int *) malloc(arr_elemnts*sizeof(int));
+	tst_arr2 = (int *) malloc(arr_elemnts*sizeof(int));
+	for (i=0; i<arr_elemnts; i++){
+		tst_arr1[i] = arr1[i];
+		tst_arr2[i] = arr2[i];
+	}
     CU_initialize_registry();
     CU_pSuite suite = CU_add_suite("Array_math_test",0,0);
 	CU_add_test(suite, "array_math", test_array_math);
