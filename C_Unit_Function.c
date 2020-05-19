@@ -20,7 +20,7 @@ void test_Fib(void)
 }
 int Palindrome(int num)
 {
-	int reversedN = 0, originalN;
+	int reversedN = 0, originalN, remainder;
 	originalN = num;
 	/* reversed integer is stored in reversedN */
     while (num != 0) 
