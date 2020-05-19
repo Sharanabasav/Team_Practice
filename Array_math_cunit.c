@@ -87,8 +87,8 @@ int main() {
 	arr_elemnts = 5;
 	int arr1[5] = {1,8,10,7,-5};
 	int arr2[5] = {1,0,0,0,-1};
-	tst_arr1 = (int *) malloc(arr_elemnts*sizeof(int));
-	tst_arr2 = (int *) malloc(arr_elemnts*sizeof(int));
+	tst_arr1 = malloc(5*sizeof(int));;
+	tst_arr2 = malloc(5*sizeof(int));
 	for (i=0; i<arr_elemnts; i++){
 		tst_arr1[i] = arr1[i];
 		tst_arr2[i] = arr2[i];
