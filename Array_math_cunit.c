@@ -1,6 +1,7 @@
 #include <CUnit/CUnit.h>
 #include <CUnit/Basic.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int arr_elemnts;
 int* tst_arr1;
@@ -77,7 +78,7 @@ void test_array_math(void){
 	CU_ASSERT(get_array_max(tst_arr2,arr_elemnts) == 1);
 	CU_ASSERT(get_array_min(tst_arr2,arr_elemnts) == -1);
 	CU_ASSERT(get_array_avg(tst_arr2,arr_elemnts) == 0.0);
-	CU_ASSERT(get__array_sum(tst_arr2,arr_elemnts) == 0);
+	CU_ASSERT(get_array_sum(tst_arr2,arr_elemnts) == 0);
 	CU_ASSERT(array_pstvs(tst_arr2,arr_elemnts) == 1);
 	CU_ASSERT(array_ngtvs(tst_arr2,arr_elemnts) == 1);
 	}
