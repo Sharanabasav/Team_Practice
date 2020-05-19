@@ -2,6 +2,9 @@
 #include <CUnit/Basic.h>
 #include <stdio.h>
 
+int arr_elemnts;
+int* tst_arr1;
+int* tst_arr2;
 
 
 int get_array_max (int* a, int b){
@@ -80,11 +83,10 @@ void test_array_math(void){
 	}
 
 int main() {
-	int arr_elemnts = 5;
-	int tst_arr1[arr_elemnts] = {1,8,10,7,-5};
-	int tst_arr2[arr_elemnts] = {1,0,0,0,-1};
+	arr_elemnts = 5;
+	tst_arr1[arr_elemnts] = {1,8,10,7,-5};
+	tst_arr2[arr_elemnts] = {1,0,0,0,-1};
 
-	
     CU_initialize_registry();
     CU_pSuite suite = CU_add_suite("Array_math_test",0,0);
 	CU_add_test(suite, "array_math", test_array_math);
