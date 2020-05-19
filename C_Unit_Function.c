@@ -19,7 +19,7 @@ int Palindrome(int num)
 {
 	int reversedN = 0, originalN;
 	originalN = num;
-	// reversed integer is stored in reversedN
+	/* reversed integer is stored in reversedN */
     while (num != 0) 
 	{
         remainder = num % 10;
@@ -27,7 +27,7 @@ int Palindrome(int num)
         num = num / 10;
     }
 
-    // palindrome if orignalN and reversedN are equal
+    /* palindrome if orignalN and reversedN are equal */
     if (originalN == reversedN)
 		return 1;
     else
