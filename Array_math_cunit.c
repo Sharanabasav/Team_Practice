@@ -70,7 +70,7 @@ void test_array_math(void){
 	CU_ASSERT(get_array_max(tst_arr1,arr_elemnts) == 10);
 	CU_ASSERT(get_array_min(tst_arr1,arr_elemnts) == -5);
 	CU_ASSERT(get_array_avg(tst_arr1,arr_elemnts) == 4.2);
-	CU_ASSERT(get__array_sum(tst_arr1,arr_elemnts) == 21);
+	CU_ASSERT(get_array_sum(tst_arr1,arr_elemnts) == 21);
 	CU_ASSERT(array_pstvs(tst_arr1,arr_elemnts) == 4);
 	CU_ASSERT(array_ngtvs(tst_arr1,arr_elemnts) == 1);
 	
@@ -85,8 +85,8 @@ void test_array_math(void){
 int main() {
 	int i;
 	arr_elemnts = 5;
-	int arr1[arr_elemnts] = {1,8,10,7,-5};
-	int arr2[arr_elemnts] = {1,0,0,0,-1};
+	int arr1[5] = {1,8,10,7,-5};
+	int arr2[5] = {1,0,0,0,-1};
 	tst_arr1 = (int *) malloc(arr_elemnts*sizeof(int));
 	tst_arr2 = (int *) malloc(arr_elemnts*sizeof(int));
 	for (i=0; i<arr_elemnts; i++){
