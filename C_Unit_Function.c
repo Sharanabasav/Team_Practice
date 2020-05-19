@@ -13,7 +13,7 @@ int Fib(int a)
 
 void test_Fib()
 {
-    CU_ASSERT(Fib(8) == 34);
+    CU_ASSERT(Fib(8) == 21);
 	CU_ASSERT(Fib(10) == 55);
 }
 int Palindrome(int num)
