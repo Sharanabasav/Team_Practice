@@ -11,11 +11,9 @@ int Fib(int a)
     return Fib(a-1) + Fib(a-2);
    }
 
-void test_Fib(void)
+void test_Fib()
 {
     CU_ASSERT(Fib(8) == 34);
-    CU_ASSERT(Fib(1) == 1);
-    CU_ASSERT(Fib(0) == 0);
 	CU_ASSERT(Fib(10) == 55);
 }
 int Palindrome(int num)
@@ -37,12 +35,10 @@ int Palindrome(int num)
         return 0;
 }
 
-void test_Palindrome(void)
+void test_Palindrome()
 {
     CU_ASSERT(Palindrome(4224) == 1);
     CU_ASSERT(Palindrome(1234) == 0);
-    CU_ASSERT(Palindrome(0) == 0);
-	CU_ASSERT(Palindrome(1) == 0);
 }
 
 int main() {
