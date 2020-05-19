@@ -1,6 +1,9 @@
 #include <CUnit/CUnit.h>
 #include <CUnit/Basic.h>
 
+int Fib (int);
+int Palindrome(int);
+
 int Fib(int a)
   {
     if (a <= 1)
