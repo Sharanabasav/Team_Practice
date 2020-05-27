@@ -44,7 +44,7 @@ int main()
 
   double *twiceSalary = multiplyByTwo(salary);
 
-  printf("double your salary is %.3f\n", *twiceSalary);
+  printf("\nDouble your salary is %.3f\n", *twiceSalary);
 
   /* Releasing Memory allocation from Heap */
   free(age);
