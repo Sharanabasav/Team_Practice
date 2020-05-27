@@ -18,13 +18,13 @@ void test_Fib()
 }
 int Palindrome(int num)
 {
-	int reversedN = 0, originalN, rem;
+	int reversedN = 0, originalN;
 	originalN = num;
 	/* reversed integer is stored in reversedN */
     while (num != 0) 
 	{
-        rem = num % 10;
-        reversedN = reversedN * 10 + rem;
+        reversedN = reversedN * 10;
+        reversedN = reversedN + num%10;
         num = num / 10;
     }
 
