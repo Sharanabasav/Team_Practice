@@ -23,7 +23,7 @@ int Palindrome(int num)
 	/* reversed integer is stored in reversedN */
     while (num != 0) 
 	{
-        remainder = num % 10;
+        rem = num % 10;
         reversedN = reversedN * 10 + rem;
         num = num / 10;
     }
